@@ -15,7 +15,7 @@
       	$scope.movieDuration=$scope.selectedMovie.Duration;
       	$scope.Genre=$scope.selectedMovie.movieGenre;
       	$scope.synopsis=$scope.selectedMovie.Moviesynopsis;
-      }     
+      }      
     });
     </script>
  <style>
@@ -73,9 +73,7 @@ article {
       <tr >
         <td>Movie name: </td>
         <td>
-          <select ng-model="selectedMovie" ng-options="name.movieName for name in names" ng-change="getValue()" 
-           ng-change="updateImageUrl(selectedUserType)" required> 
-          <option value="">Select Movie</option>
+          <select ng-model="selectedMovie" ng-options="name.movieName for name in names" ng-change="getValue()" n>
             </select>
         </td>
       </tr>
